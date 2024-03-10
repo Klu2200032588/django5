@@ -1,0 +1,75 @@
+{% load static %}
+{% block body%}
+{% include 'navigation.html'%}
+
+<style>
+    .container{
+    max-width: 90%
+
+    }
+.content{
+    text-align:left;
+    position:absolute;
+    bottom:0;
+    #background:rgba(0,0,0.5);
+    color:cyan
+    height : 30px;
+    width:91%;
+    }
+
+</style>
+
+
+
+<div class ="container-fluid" style ="margin-top:1%">
+
+   <img src="{% static 'images/onhome.avif' %}" style="height:550px;width:100%">
+
+
+</div>
+<div class ="container" style ="background-color:white;height:570px;color: LightSlateGray ; margin-top:2%">
+<h1 class ="text-center text-yellow">Our Top Companies</h1>
+<div>
+
+<div class="row">
+    <div class ="col-md-3">
+        <img src="{%static 'images/walmart.png'%}" style ="width=100%; margin-top:5%;height : 200px; border-radius:50%" >
+        <div class ="content " >
+            <p> Walmart</p>
+    </div>
+
+
+</div>
+ <div class ="col-md-3">
+        <img src="{%static 'images/tata.jpeg'%}" style ="width=100%; margin-top:5%;height : 200px; border-radius:50%" >
+        <div class ="content " >
+            <p> TATA</p>
+    </div>
+ </div>
+
+
+      <div class ="col-md-3">
+        <img src="{%static 'images/slack.png'%}" style ="width=100%; margin-top:5%;height : 200px; border-radius:50%" >
+        <div class ="content " >
+            <p> slacks</p>
+    </div>
+      </div>
+
+
+           <div class ="col-md-3">
+        <img src="{%static 'images/navidia.jpeg'%}" style ="width=100%; margin-top:5%;height : 200px; border-radius:50%" >
+        <div class ="content " >
+            <p> Navidia</p>
+    </div>
+           </div>
+
+</div>
+
+    </div>
+
+
+
+    <br>
+    <br>
+   {%include 'footer.html'%}
+{% endblock %}
